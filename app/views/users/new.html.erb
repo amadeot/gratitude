@@ -1,0 +1,10 @@
+<%= form_for @user do |f| %>
+  <%= f.text_field :phone, :placeholder => "phone number" %>
+  <%= f.text_field :username, :placeholder => 'username' %>
+  <%= f.text_field :password, :placeholder => 'password' %>
+  <%= f.text_field :password_confirmation, :placeholder => 'password confirmation' %>
+  <%= f.hidden_field :active, :value => 1 %>
+  <%= f.text_field :start_range %>
+  <%= f.text_field :end_range %>
+  <%= f.submit "register" %>
+<% end %>
