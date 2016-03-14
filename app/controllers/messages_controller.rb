@@ -1,4 +1,4 @@
-class MessagesController < ActionController::Base
+class MessagesController < ApplicationController
 
   def index
     puts 'Is this loggin' + params["Body"]
