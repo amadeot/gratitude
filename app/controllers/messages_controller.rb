@@ -15,6 +15,8 @@ class MessagesController < ApplicationController
 
     # SMSLogger.log_text_message from_number, message_body
 
+    #randomupdate
+
     redirect_to "/"
   end
 
