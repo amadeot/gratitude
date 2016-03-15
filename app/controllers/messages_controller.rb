@@ -15,7 +15,7 @@ class MessagesController < ApplicationController
 
     # SMSLogger.log_text_message from_number, message_body
 
-    redirect_to "/"
+    head :ok
   end
 
 
