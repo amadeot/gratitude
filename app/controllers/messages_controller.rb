@@ -8,6 +8,8 @@ class MessagesController < ApplicationController
     @user.gratitudes.push(@test_gratitude_2)
     @user.save
 
+    SMSLogger.log_text_message from_number, message_body
+
     redirect_to "/"
   end
 
