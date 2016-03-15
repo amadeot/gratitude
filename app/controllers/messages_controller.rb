@@ -13,6 +13,8 @@ class MessagesController < ApplicationController
 
     # SMSLogger.log_text_message from_number, message_body
 
+    #test cmment
+
     redirect_to "/"
   end
 
