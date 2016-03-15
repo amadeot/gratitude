@@ -1,5 +1,7 @@
 class MessagesController < ApplicationController
 
+  skip_before_action :verify_authenticity_token
+
   def create
     puts 'Is this loggin' + params["Body"]
     # @gratitude = Gratitude.create({message: params["Body"], message_date: "2016-03-03"})
