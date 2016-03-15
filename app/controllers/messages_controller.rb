@@ -1,7 +1,5 @@
 class MessagesController < ApplicationController
 
-  skip_before_action :verify_authenticity_token
-  
   def index
     puts 'LOG ANYTHING'
     puts 'Is this loggin' + params["Body"]
