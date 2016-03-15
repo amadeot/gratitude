@@ -14,7 +14,7 @@ class MessagesController < ApplicationController
     render xml: "<Response/>"
 
     # SMSLogger.log_text_message from_number, message_body
-
+    #200!!
     head :ok
   end
 
