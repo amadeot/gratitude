@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/register' => 'users#new'
   get '/login' => 'sessions#new'
   post '/register' => 'users#create'
-  post '/received' => 'messages#index'
+  post '/received' => 'messages#create'
 
 
 end
