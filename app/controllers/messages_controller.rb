@@ -1,5 +1,7 @@
 class MessagesController < ApplicationController
 
+  skip_before_action :verify_authenticity_token
+
   def index
     puts 'LOG ANYTHING'
     puts 'Is this loggin' + params["Body"]
@@ -12,8 +14,6 @@ class MessagesController < ApplicationController
     render xml: "<Response/>"
 
     # SMSLogger.log_text_message from_number, message_body
-
-    #test cmment
 
     redirect_to "/"
   end
